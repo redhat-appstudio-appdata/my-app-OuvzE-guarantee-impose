@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-cnwc
+  namespace: nmukherj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:aaa34c439b7346a9d7efb41fd5d4e1e668f548d095627e9bad8bb4f03323251c
+        name: my-python
+        resources: {}
+status: {}
